@@ -31,21 +31,21 @@
 	</div>
 
 	<!-- Slider -->
-
-	<div class="main_slider" style="background-image:url(Templates/Client/images/slider.jpg)">
+	<c:forEach items="${banner}" var ="b">
+	<div class="main_slider" style="background-image:url(Uploads/${b.image})">
 		<div class="container fill_height">
 			<div class="row align-items-center fill_height">
 				<div class="col">
 					<div class="main_slider_content">
 						<h6>3 MENS/ PETSHOP</h6>
-						<h2>PET XINH KHÔNG CẦN CHỈNH </h2>
-						<div class="red_button shop_now_button"><a href="#">THAM QUAN</a></div>
+						<h2>${b.title}</h2>
+						<div class="red_button shop_now_button"><a href="shop">THAM QUAN</a></div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
+	</c:forEach>
 	<!-- Banner -->
 
 	<div class="banner">

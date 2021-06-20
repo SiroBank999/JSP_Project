@@ -9,8 +9,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import Model.BannerModel;
 import Model.CategoryModel;
 import Model.ProductModel;
+import Object.Banner;
 import Object.Category;
 import Object.Product;
 
@@ -35,6 +37,9 @@ public class Home_controller extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		CategoryModel categoryModel = new CategoryModel();
 		List<Category> listcate = categoryModel.getCategory();
+		BannerModel bm = new BannerModel();
+		List<Banner> list = bm.getBanner();
+		request.setAttribute("banner", list);
 		request.setAttribute("listcategory", listcate);
 		request.setAttribute("page", "home");
 		getProductsale(request, response);

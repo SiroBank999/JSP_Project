@@ -12,7 +12,7 @@
 						<div class="form-group">
 							<label for="exampleInputUsername1">Tên tiêu đề</label> <input
 								type="text" class="form-control" id="exampleInputUsername1"
-								placeholder="Danh mục" name="categoryname">
+								placeholder="Danh mục" name="title">
 						</div>
 						<div class="form-group">
 							<label>Ảnh</label> <input type="file" name="photo"

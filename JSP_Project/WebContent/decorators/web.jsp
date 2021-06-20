@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>  
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>MS3 SHOP</title>
+<title>Colo Shop</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Colo Shop Template">
@@ -22,7 +22,9 @@
 <link rel="stylesheet" type="text/css" href="templates/Client/styles/categories_responsive.css">
 <link rel="stylesheet" type="text/css" href="templates/Client/plugins/jquery-ui-1.12.1.custom/jquery-ui.css">
 <link rel="stylesheet" href="templates/Client/plugins/themify-icons/themify-icons.css">
-
+<link rel="stylesheet" type="text/css" href="templates/Client/styles/contact_styles.css">
+<link rel="stylesheet" type="text/css" href="templates/Client/styles/contact_responsive.css">
+<link rel="stylesheet" href="templates/Client/plugins/styles/news_styles.css">
 </head>
 <body>
 
@@ -44,5 +46,7 @@
 <script src="templates/Client/plugins/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
 <script src="templates/Client/js/categories_custom.js"></script>
 <script src="templates/Client/js/single_custom.js"></script>
+<script src="templates/Client/js/contact_custom.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 </html>

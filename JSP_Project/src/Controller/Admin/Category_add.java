@@ -30,7 +30,7 @@ public class Category_add extends HttpServlet {
 			Part part =request.getPart("photo");
 			CategoryModel ct = new CategoryModel();
 			//String realPart =request.getServletContext().getRealPath("/Uploads");
-			String realPart ="F:\\SHOP\\JSP_Project\\WebContent\\Uploads";
+			String realPart ="F:\\JSP_Project\\JSP_Project\\WebContent\\Uploads";
 			String filename =Path.of(part.getSubmittedFileName()).getFileName().toString();
 			if(!Files.exists(Path.of(realPart))) {
 				Files.createDirectory(Path.of(realPart));

@@ -1,16 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>  
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Colo Shop</title>
+<title>M3NS</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Colo Shop Template">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="templates/Client/styles/bootstrap4/bootstrap.min.css">
 <link href="templates/Client/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="templates/Client/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
 <link rel="stylesheet" type="text/css" href="templates/Client/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
 <link rel="stylesheet" type="text/css" href="templates/Client/plugins/OwlCarousel2-2.2.1/animate.css">
@@ -24,7 +26,9 @@
 <link rel="stylesheet" href="templates/Client/plugins/themify-icons/themify-icons.css">
 <link rel="stylesheet" type="text/css" href="templates/Client/styles/contact_styles.css">
 <link rel="stylesheet" type="text/css" href="templates/Client/styles/contact_responsive.css">
-<link rel="stylesheet" href="templates/Client/plugins/styles/news_styles.css">
+<link rel="stylesheet" href="templates/Client/styles/news_styles.css">
+<link rel="stylesheet" href="templates/Client/styles/bill_styles.css">
+<link rel="stylesheet" href="templates/Client/styles/more_styles.css">
 </head>
 <body>
 
@@ -47,6 +51,6 @@
 <script src="templates/Client/js/categories_custom.js"></script>
 <script src="templates/Client/js/single_custom.js"></script>
 <script src="templates/Client/js/contact_custom.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js%22%3E"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 </html>

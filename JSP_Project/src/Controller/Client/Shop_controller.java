@@ -9,8 +9,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import Model.BannerModel;
 import Model.CategoryModel;
 import Model.ProductModel;
+import Object.Banner;
 import Object.Category;
 import Object.Product;
 
@@ -37,14 +39,14 @@ public class Shop_controller extends HttpServlet {
 		List<Product> listproduct  = pro.getProduct();
 		CategoryModel cm = new CategoryModel();
 		List<Category> listcategory = cm.getlistCategory();
+		BannerModel bm = new BannerModel();
+		List<Banner> listBanner = bm.getBanner();
+		request.setAttribute("banner", listBanner);
 		request.setAttribute("product", listproduct);
 		request.setAttribute("category", listcategory);
 		request.setAttribute("page", "shop");
 		request.getRequestDispatcher("decorators/web.jsp").forward(request, response);
-		
-		
-//		request.setAttribute("page", "product");
-//		request.getRequestDispatcher("decorators/web.jsp").forward(request, response);
+
 	}
 
 	/**

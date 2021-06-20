@@ -9,13 +9,13 @@ import javax.servlet.http.HttpServletResponse;
 
 
 @WebServlet("/order_manager")
-public class Order_controller extends HttpServlet {
+public class Order_manager extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Order_controller() {
+    public Order_manager() {
         super();
         // TODO Auto-generated constructor stub
     }

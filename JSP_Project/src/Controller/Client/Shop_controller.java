@@ -41,10 +41,7 @@ public class Shop_controller extends HttpServlet {
 		request.setAttribute("category", listcategory);
 		request.setAttribute("page", "shop");
 		request.getRequestDispatcher("decorators/web.jsp").forward(request, response);
-		
-		
-//		request.setAttribute("page", "product");
-//		request.getRequestDispatcher("decorators/web.jsp").forward(request, response);
+
 	}
 
 	/**

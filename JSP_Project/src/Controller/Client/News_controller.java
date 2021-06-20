@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import Model.NewsModel;
 //import Model.NewsModel;
 import Model.ProductModel;
 import Object.News;
@@ -34,9 +35,9 @@ public class News_controller extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//NewsModel nm = new NewsModel();
-		//List<News> listNews  = nm.getNews();
-		//request.setAttribute("news",listNews );
+		NewsModel nm = new NewsModel();
+		List<News> listNews  = nm.getNews();
+		request.setAttribute("news",listNews );
 		request.setAttribute("page", "news");
 		request.getRequestDispatcher("decorators/web.jsp").forward(request, response);
 	}

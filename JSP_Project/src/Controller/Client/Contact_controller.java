@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import Model.ContactModel;
+
 //import Model.ContactModel;
 
 /**
@@ -44,8 +46,8 @@ public class Contact_controller extends HttpServlet {
 		String phone = request.getParameter("phone");
 		String email = request.getParameter("email");
 		String content = request.getParameter("content");
-		//ContactModel cm = new ContactModel();
-		//cm.insertContact(name, phone, email, content);
+		ContactModel cm = new ContactModel();
+		cm.insertContact(name, phone, email, content);
 		response.sendRedirect("contact");
 	}
 

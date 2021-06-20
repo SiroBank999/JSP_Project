@@ -48,10 +48,10 @@
 						</div>
 						<nav class="navbar">
 							<ul class="navbar_menu">
-								<li><a href="#">Trang Chủ</a></li>
-								<li><a href="#">Cửa Hàng</a></li>
+								<li><a href="home_client">Trang Chủ</a></li>
+								<li><a href="product">Cửa Hàng</a></li>
 								<li><a href="#">Giới Thiệu</a></li>
-								<li><a href="contact.html">Liên Hệ</a></li>
+								<li><a href="contact">Liên Hệ</a></li>
 							</ul>
 							<ul class="navbar_user">
 								<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>

@@ -57,40 +57,7 @@
 					<div class="dropdown-menu dropdown-menu-right navbar-dropdown"
 						aria-labelledby="notificationDropdown">
 						<p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
-						<a class="dropdown-item">
-							<div class="item-thumbnail">
-								<div class="item-icon bg-success">
-									<i class="ti-info-alt mx-0"></i>
-								</div>
-							</div>
-							<div class="item-content">
-								<h6 class="font-weight-normal">Application Error</h6>
-								<p class="font-weight-light small-text mb-0 text-muted">Just
-									now</p>
-							</div>
-						</a> <a class="dropdown-item">
-							<div class="item-thumbnail">
-								<div class="item-icon bg-warning">
-									<i class="ti-settings mx-0"></i>
-								</div>
-							</div>
-							<div class="item-content">
-								<h6 class="font-weight-normal">Thiết lập</h6>
-								<p class="font-weight-light small-text mb-0 text-muted">
-									Private message</p>
-							</div>
-						</a> <a class="dropdown-item">
-							<div class="item-thumbnail">
-								<div class="item-icon bg-info">
-									<i class="ti-user mx-0"></i>
-								</div>
-							</div>
-							<div class="item-content">
-								<h6 class="font-weight-normal">New user registration</h6>
-								<p class="font-weight-light small-text mb-0 text-muted">2
-									days ago</p>
-							</div>
-						</a>
+					
 					</div>
 				</li>
 				<li class="nav-item">
@@ -104,7 +71,7 @@
 						<a class="dropdown-item"> <i class="ti-settings text-primary"></i>
 							Tùy chỉnh
 						</a> <a class="dropdown-item" href="logout"> <i class="ti-power-off text-primary"></i>
-							Logout
+							Đăng xuất
 						</a>
 					</div>
 				</li>

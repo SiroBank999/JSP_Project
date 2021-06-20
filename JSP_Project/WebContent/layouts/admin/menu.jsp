@@ -32,8 +32,8 @@
             </a>
             <div class="collapse" id="ui-basic-2">
               <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="banner">Banner</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#">Liên hệ</a></li>
+              <li class="nav-item"> <a class="nav-link" href="banner_manager">Banner</a></li>
+                <li class="nav-item"> <a class="nav-link" href="contact_manager">Liên hệ</a></li>
                 <li class="nav-item"> <a class="nav-link" href="#">Bình luận</a></li>
                 
                  <li class="nav-item"> <a class="nav-link" href="#">Tin tức - Sự kiện</a></li>

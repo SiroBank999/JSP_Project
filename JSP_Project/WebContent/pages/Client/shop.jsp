@@ -71,12 +71,9 @@
 							<h5>Product Category</h5>
 						</div>
 						<ul class="sidebar_categories">
-							<li><a href="#">Men</a></li>
-							<li class="active"><a href="#"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>Women</a></li>
-							<li><a href="#">Accessories</a></li>
-							<li><a href="#">New Arrivals</a></li>
-							<li><a href="#">Collection</a></li>
-							<li><a href="#">Shop</a></li>
+						<c:forEach items="${category}" var="cate">
+							<li><a href="shop_load?id_category=${cate.id }">${cate.categoryname}</a></li>
+							</c:forEach>
 						</ul>
 					</div>
 

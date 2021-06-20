@@ -63,6 +63,21 @@ public class CategoryModel {
 		}
 		return list;
 	}
+	public List<Category> getlistCategory(){
+		List<Category> list = new ArrayList<>();
+		String query = "select * from category  ";
+		try {
+			conn = Database.ketNoi();
+			ps = conn.prepareStatement(query);
+			rs = ps.executeQuery();
+			while(rs.next()) {
+				list.add(new Category(rs.getInt(1),rs.getString(2),rs.getString(3)));
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return list;
+	}
 	public void addCategory(String categoryname ,String image) {
 			
 			String query = "insert into category(categoryname,image) values(?,?)";

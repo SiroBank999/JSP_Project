@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>  
+<%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
 <div class="hamburger_menu">
 		<div class="hamburger_close"><i class="fa fa-times" aria-hidden="true"></i></div>
 		<div class="hamburger_menu_content text-right">
@@ -70,12 +71,9 @@
 							<h5>Product Category</h5>
 						</div>
 						<ul class="sidebar_categories">
-							<li><a href="#">Men</a></li>
-							<li class="active"><a href="#"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>Women</a></li>
-							<li><a href="#">Accessories</a></li>
-							<li><a href="#">New Arrivals</a></li>
-							<li><a href="#">Collection</a></li>
-							<li><a href="#">Shop</a></li>
+						<c:forEach items="${category}" var="cate">
+							<li><a href="shop_load?id_category=${cate.id }">${cate.categoryname}</a></li>
+							</c:forEach>
 						</ul>
 					</div>
 
@@ -141,8 +139,8 @@
 							<div class="col">
 
 								<!-- Product Sorting -->
-
-								<div class="product_sorting_container product_sorting_container_top">
+					
+											
 									<ul class="product_sorting">
 										<li>
 											<span class="type_sorting_text">Default Sorting</span>
@@ -164,6 +162,7 @@
 											</ul>
 										</li>
 									</ul>
+									
 									<div class="pages d-flex flex-row align-items-center">
 										<div class="page_current">
 											<span>1</span>
@@ -184,20 +183,20 @@
 								<div class="product-grid">
 							
 						
-									<c:forEach items="${Pet}" var="pett">
+									<c:forEach items="${productid}" var="pd">
 									<div class="product-item">
 										<div class="product discount product_filter">
 											<div class="product_image">
-												<img src="../Templates/Client/images/${pett.image}" width="300px", height="200px"></image>
+												<img src="Uploads/${pd.image}" width="300px" height="200px"/>
 											</div>
 											<div class="favorite favorite_left"></div>
-											<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-$20</span></div>
+											<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>${pd.status}</span></div>
 											<div class="product_info">
-												<h6 class="product_name"><a href="detail?id_id_pet=${pett.id_pet}">${pett.tenthucung}</a></h6>
-												<div class="product_price">${pett.giaban}</span></div>
+												<h6 class="product_name"><a href="detail?id=${pd.id}">${pd.productname}</a></h6>
+												<div class="product_price"><fmt:formatNumber type = "number"  maxFractionDigits = "3" value = "${pd.price}" /> đ<span></span></div>
 											</div>
 										</div>
-										<div class="red_buttons add_to_cart_buttons"><a href="#">add to cart</a></div>
+										<div class="red_buttons add_to_cart_buttons"><a href="#">Thêm vào giỏ</a></div>
 									</div>
 									</c:forEach>	
 									
@@ -205,35 +204,7 @@
 
 								<!-- Product Sorting -->
 
-								<div class="product_sorting_container product_sorting_container_bottom clearfix">
-									<ul class="product_sorting">
-										<li>
-											<span>Show:</span>
-											<span class="num_sorting_text">04</span>
-											<i class="fa fa-angle-down"></i>
-											<ul class="sorting_num">
-												<li class="num_sorting_btn"><span>01</span></li>
-												<li class="num_sorting_btn"><span>02</span></li>
-												<li class="num_sorting_btn"><span>03</span></li>
-												<li class="num_sorting_btn"><span>04</span></li>
-											</ul>
-										</li>
-									</ul>
-									<span class="showing_results">Showing 1–3 of 12 results</span>
-									<div class="pages d-flex flex-row align-items-center">
-										<div class="page_current">
-											<span>1</span>
-											<ul class="page_selection">
-												<li><a href="#">1</a></li>
-												<li><a href="#">2</a></li>
-												<li><a href="#">3</a></li>
-											</ul>
-										</div>
-										<div class="page_total"><span>of</span> 3</div>
-										<div id="next_page_1" class="page_next"><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
-									</div>
-
-								</div>
+								
 
 							</div>
 						</div>

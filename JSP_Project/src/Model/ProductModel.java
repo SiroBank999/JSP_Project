@@ -102,6 +102,22 @@ public class ProductModel {
 		}
 		return listProduct;
 	}
+	public List<Product> getProductbyIdcategory(int id ) {
+		List<Product> listProduct = new ArrayList<>();
+		String query = "select*from product where id_category=?";
+		try {
+			conn = Database.ketNoi();
+			ps = conn.prepareStatement(query);
+			ps.setInt(1, id);
+			rs = ps.executeQuery();
+			while (rs.next()) {
+				listProduct.add(new Product(rs.getInt(1), rs.getString(2), rs.getDouble(3), rs.getDouble(4),
+						rs.getString(5), rs.getString(6), rs.getString(7), rs.getString(8), rs.getInt(9)));
+			}
+		} catch (Exception e) {
+		}
+		return listProduct;
+	}
 	public void updateProduct(String productname, double price, double sale, String image, String describe,
 			String status, int id_cate,int id) {
 
@@ -143,6 +159,7 @@ public class ProductModel {
 	
 	
 	}
+	
 	public Product getProductbyId(int id) {
 		Product pd = new Product();
 		String query = "select*from product where id= ? ";
@@ -175,7 +192,7 @@ public class ProductModel {
 	}
 	public static void main(String[] args) {
 		ProductModel pm = new ProductModel();
-		pm.updateProduct("Con Cac", 22220, 22220,"product.png","Mới","Cac", 1, 35);
+		pm.getProductbyIdcategory(1);
 
 	}
 }

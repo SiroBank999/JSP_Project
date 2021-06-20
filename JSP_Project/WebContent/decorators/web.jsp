@@ -47,6 +47,6 @@
 <script src="templates/Client/js/categories_custom.js"></script>
 <script src="templates/Client/js/single_custom.js"></script>
 <script src="templates/Client/js/contact_custom.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js%22%3E"></script>
 </body>
 </html>

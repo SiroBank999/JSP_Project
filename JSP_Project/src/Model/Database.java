@@ -8,13 +8,13 @@ import java.sql.SQLException;
 public class Database {
 
 	private final static String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-	private final static String DATABASE_LINK = "jdbc:mysql://localhost:3306/csdl_banhang";
+	private final static String DATABASE_LINK = "jdbc:mysql://localhost:3307/csdl_banhang";
 	public static Connection ketNoi() {
 		Connection conn = null;
 
 		try {
 			Class.forName(JDBC_DRIVER);
-			conn = DriverManager.getConnection(DATABASE_LINK, "root", "Kothequen");
+			conn = DriverManager.getConnection(DATABASE_LINK, "root", "292000");
 		} catch (ClassNotFoundException ex) {
 			System.err.println("Không tìm thấy Driver: " + ex.getMessage());
 		} catch (SQLException ex) {

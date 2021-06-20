@@ -15,16 +15,16 @@ import Object.Category;
 import Object.Product;
 
 /**
- * Servlet implementation class Shop_controller
+ * Servlet implementation class Shopload_controller
  */
-@WebServlet("/shop")
-public class Shop_controller extends HttpServlet {
+@WebServlet("/shop_load")
+public class Shopload_controller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Shop_controller() {
+    public Shopload_controller() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -33,18 +33,15 @@ public class Shop_controller extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		int id = Integer.parseInt(request.getParameter("id_category"));
 		ProductModel pro = new ProductModel();
-		List<Product> listproduct  = pro.getProduct();
+		List<Product> listproduct  = pro.getProductbyIdcategory(id);
 		CategoryModel cm = new CategoryModel();
 		List<Category> listcategory = cm.getlistCategory();
-		request.setAttribute("product", listproduct);
+		request.setAttribute("productid", listproduct);
 		request.setAttribute("category", listcategory);
-		request.setAttribute("page", "shop");
+		request.setAttribute("page", "shop_load");
 		request.getRequestDispatcher("decorators/web.jsp").forward(request, response);
-		
-		
-//		request.setAttribute("page", "product");
-//		request.getRequestDispatcher("decorators/web.jsp").forward(request, response);
 	}
 
 	/**

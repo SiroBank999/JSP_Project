@@ -8,7 +8,7 @@
 			<div class="row">
 				<div class="col text-center">
 					<div class="section_title">
-						<h2>THỜI TRANG NƯỚC NGOÀI</h2>
+						<h2></h2>
 					</div>
 				</div>
 			</div>

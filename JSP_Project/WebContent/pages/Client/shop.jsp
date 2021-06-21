@@ -146,7 +146,7 @@
 											<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>${pd.status}</span></div>
 											<div class="product_info">
 												<h6 class="product_name"><a href="detail?id=${pd.id}">${pd.productname}</a></h6>
-												<div class="product_price"><fmt:formatNumber type = "number"  maxFractionDigits = "3" value = "${pd.price}" /> <span></span><strong>đ</strong></div>
+												<div class="product_price"><fmt:formatNumber type = "number"  maxFractionDigits = "3" value = "${pd.price}" /><span></span><strong>đ</strong></div>
 											</div>
 										</div>
 										<div class="red_buttons add_to_cart_buttons"><a href="#">Thêm vào giỏ</a></div>

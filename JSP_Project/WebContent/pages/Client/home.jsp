@@ -3,33 +3,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>  
 
 	<div class="fs_menu_overlay"></div>
-	<div class="hamburger_menu">
-		<div class="hamburger_close"><i class="fa fa-times" aria-hidden="true"></i></div>
-		<div class="hamburger_menu_content text-right">
-			<ul class="menu_top_nav">
-				<li class="menu_item has-children">
-					
-				</li>
-				<li class="menu_item has-children">
-					
-				</li>
-				<li class="menu_item has-children">
-					<a href="#">
-						TÀI KHOAN CÁ NHÂN
-						<i class="fa fa-angle-down"></i>
-					</a>
-					<ul class="menu_selection">
-						<li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Đăng Nhập</a></li>
-										<li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>Đăng Kí</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Trang Chủ</a></li>
-								<li><a href="#">Cửa Hàng</a></li>
-								<li><a href="#">Giới Thiệu</a></li>
-								<li><a href="contact.html">Liên Hệ</a></li>
-			</ul>
-		</div>
-	</div>
+	
+	
 
 	<!-- Slider -->
 	<c:forEach items="${banner}" var ="b">
@@ -92,7 +67,7 @@
 						<div class="row">
 				<div class="col">
 					<div class="product-grid" data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }'>
-
+					
 						<!-- Product 1 -->
 
 						<div class="product-item men">
@@ -112,151 +87,11 @@
 
 						<!-- Product 2 -->
 
-						<div class="product-item women">
-							<div class="product product_filter">
-								<div class="product_image">
-									<img src="Templates/Client/images/product_2.jpg" alt="">
-								</div>
-								<div class="favorite"></div>
-								<div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>new</span></div>
-								<div class="product_info">
-									<h6 class="product_name"><a href="single.html">aaaaaaaaaaaa</a></h6>
-									<div class="product_price">$610.00</div>
-								</div>
-							</div>
-							<div class="red_button add_to_cart_button"><a href="#">Thêm vào giỏ hàng</a></div>
-						</div>
-
-						<!-- Product 3 -->
-
-						<div class="product-item women">
-							<div class="product product_filter">
-								<div class="product_image">
-									<img src="Templates/Client/images/product_3.jpg" alt="">
-								</div>
-								<div class="favorite"></div>
-								<div class="product_info">
-									<h6 class="product_name"><a href="single.html">aaaaaaaaaaaa</a></h6>
-									<div class="product_price">$120.00</div>
-								</div>
-							</div>
-							<div class="red_button add_to_cart_button"><a href="#">Thêm vào giỏ hàng</a></div>
-						</div>
-
-						<!-- Product 4 -->
-
-						<div class="product-item accessories">
-							<div class="product product_filter">
-								<div class="product_image">
-									<img src="Templates/Client/images/product_4.jpg" alt="">
-								</div>
-								<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>sale</span></div>
-								<div class="favorite favorite_left"></div>
-								<div class="product_info">
-									<h6 class="product_name"><a href="single.html">aaaaaaaaaaaa</a></h6>
-									<div class="product_price">$410.00</div>
-								</div>
-							</div>
-							<div class="red_button add_to_cart_button"><a href="#">Thêm vào giỏ hàng</a></div>
-						</div>
-
-						<!-- Product 5 -->
-
-						<div class="product-item women men">
-							<div class="product product_filter">
-								<div class="product_image">
-									<img src="Templates/Client/images/product_4.jpg" alt="">
-								</div>
-								<div class="favorite"></div>
-								<div class="product_info">
-									<h6 class="product_name"><a href="single.html">aaaaaaaaaaaa</a></h6>
-									<div class="product_price">$180.00</div>
-								</div>
-							</div>
-							<div class="red_button add_to_cart_button"><a href="#">Thêm vào giỏ hàng</a></div>
-						</div>
-
-						<!-- Product 6 -->
-
-						<div class="product-item accessories">
-							<div class="product discount product_filter">
-								<div class="product_image">
-									<img src="Templates/Client/images/product_4.jpg" alt="">
-								</div>
-								<div class="favorite favorite_left"></div>
-								<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-$20</span></div>
-								<div class="product_info">
-									<h6 class="product_name"><a href="#single.html">aaaaaaaaaaaa</a></h6>
-									<div class="product_price">$520.00<span>$590.00</span></div>
-								</div>
-							</div>
-							<div class="red_button add_to_cart_button"><a href="#">Thêm vào giỏ hàng</a></div>
-						</div>
-
-						<!-- Product 7 -->
-
-						<div class="product-item women">
-							<div class="product product_filter">
-								<div class="product_image">
-									<img src="Templates/Client/images/product_4.jpg" alt="">
-								</div>
-								<div class="favorite"></div>
-								<div class="product_info">
-									<h6 class="product_name"><a href="single.html">aaaaaaaaaaaa</a></h6>
-									<div class="product_price">$610.00</div>
-								</div>
-							</div>
-							<div class="red_button add_to_cart_button"><a href="#">Thêm vào giỏ hàng</a></div>
-						</div>
-
-						<!-- Product 8 -->
-
-						<div class="product-item accessories">
-							<div class="product product_filter">
-								<div class="product_image">
-									<img src="Templates/Client/images/product_4.jpg" alt="">
-								</div>
-								<div class="favorite"></div>
-								<div class="product_info">
-									<h6 class="product_name"><a href="single.html">aaaaaaaaaaaa</a></h6>
-									<div class="product_price">$120.00</div>
-								</div>
-							</div>
-							<div class="red_button add_to_cart_button"><a href="#">Thêm vào giỏ hàng</a></div>
-						</div>
-
-						<!-- Product 9 -->
-
-						<div class="product-item men">
-							<div class="product product_filter">
-								<div class="product_image">
-									<img src="Templates/Client/images/product_4.jpg" alt="">
-								</div>
-								<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>sale</span></div>
-								<div class="favorite favorite_left"></div>
-								<div class="product_info">
-									<h6 class="product_name"><a href="single.html">aaaaaaaaaaaa</a></h6>
-									<div class="product_price">$410.00</div>
-								</div>
-							</div>
-							<div class="red_button add_to_cart_button"><a href="#">Thêm vào giỏ hàng</a></div>
-						</div>
+						
 
 						<!-- Product 10 -->
 
-						<div class="product-item men">
-							<div class="product product_filter">
-								<div class="product_image">
-									<img src="Templates/Client/images/product_4.jpg" alt="">
-								</div>
-								<div class="favorite"></div>
-								<div class="product_info">
-									<h6 class="product_name"><a href="single.html">aaaaaaaaaaaa</a></h6>
-									<div class="product_price">$180.00</div>
-								</div>
-							</div>
-							<div class="red_button add_to_cart_button"><a href="#">Thêm vào giỏ hàng</a></div>
-						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -410,41 +245,23 @@
 			<div class="row">
 				<div class="col text-center">
 					<div class="section_title">
-						<h2>BLOG MỚI NHẤT</h2>
+						<h2>TIN MỚI</h2>
 					</div>
 				</div>
 			</div>
 			<div class="row blogs_container">
+					<c:forEach items="${news}" var="news">
 				<div class="col-lg-4 blog_item_col">
 					<div class="blog_item">
-						<div class="blog_background" style="background-image:url(Templates/Client/images/banner_1.jpg)"></div>
+						<div class="blog_background" style="background-image:url(Uploads/${news.image}})"></div>
 						<div class="blog_content d-flex flex-column align-items-center justify-content-center text-center">
-							<h4 class="blog_title">aaaaaaaaaaaaaaa</h4>
-							<span class="blog_meta">Bởi AN Dzai | 9-6-2021</span>
-							<a class="blog_more" href="#">Đọc Thêm</a>
+							<h4 class="blog_title">${news.title}</h4>
+							<span class="blog_meta">Khanh</span>
+							<a class="blog_more"  href="detail_news?id=${news.id}">Đọc Thêm</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 blog_item_col">
-					<div class="blog_item">
-						<div class="blog_background" style="background-image:url(Templates/Client/images/banner_2.jpg)"></div>
-						<div class="blog_content d-flex flex-column align-items-center justify-content-center text-center">
-							<h4 class="blog_title">aaaaaaaaaaaaaaa</h4>
-							<span class="blog_meta">Bởi AN Dzai | 9-6-2021</span>
-							<a class="blog_more" href="#">Đọc Thêm</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 blog_item_col">
-					<div class="blog_item">
-						<div class="blog_background" style="background-image:url(Templates/Client/images/banner_3.jpg)"></div>
-						<div class="blog_content d-flex flex-column align-items-center justify-content-center text-center">
-							<h4 class="blog_title">aaaaaaaaaaaaaaa</h4>
-							<span class="blog_meta">Bởi AN Dzai | 9-6-2021</span>
-							<a class="blog_more" href="#">Đọc Thêm</a>
-						</div>
-					</div>
-				</div>
+				</c:forEach>
 			</div>
 		</div>
 	</div>

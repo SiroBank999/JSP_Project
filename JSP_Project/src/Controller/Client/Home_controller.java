@@ -11,9 +11,11 @@ import javax.servlet.http.HttpServletResponse;
 
 import Model.BannerModel;
 import Model.CategoryModel;
+import Model.NewsModel;
 import Model.ProductModel;
 import Object.Banner;
 import Object.Category;
+import Object.News;
 import Object.Product;
 
 /**
@@ -39,6 +41,9 @@ public class Home_controller extends HttpServlet {
 		List<Category> listcate = categoryModel.getCategory();
 		BannerModel bm = new BannerModel();
 		List<Banner> list = bm.getBanner();
+		NewsModel nm = new NewsModel();
+		List<News> listNews  = nm.getNews();
+		request.setAttribute("news",listNews );
 		request.setAttribute("banner", list);
 		request.setAttribute("listcategory", listcate);
 		request.setAttribute("page", "home");

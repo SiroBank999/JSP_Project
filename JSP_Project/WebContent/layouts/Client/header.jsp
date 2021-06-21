@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 		<header class="header trans_300">
 		<!-- Top Navigation -->
 		<div class="top_nav">
@@ -26,8 +27,16 @@
 										<i class="fa fa-angle-down"></i>
 									</a>
 									<ul class="account_selection">
+									<c:if test="${sessionScope.user  == null}">
 										<li><a href="login_user"><i class="fa fa-sign-in" aria-hidden="true"></i>Đăng Nhập</a></li>
+										
 										<li><a href="registraton"><i class="fa fa-user-plus" aria-hidden="true"></i>Đăng Kí</a></li>
+										</c:if>
+										<c:if test="${sessionScope.user != null}">
+										<li>
+										<a href="logout_user"><i class="fa fa-user-plus" aria-hidden="true"></i>Đăng xuất</a>
+										</li>
+										</c:if>
 									</ul>
 								</li>
 							</ul>
@@ -55,6 +64,7 @@
 							</ul>
 							<ul class="navbar_user">
 								<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+								<li>Xin chào:${sessionScope.user.fullname}</li>
 								<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
 								<li class="checkout">
 									<a href="#">

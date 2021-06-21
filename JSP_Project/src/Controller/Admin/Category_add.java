@@ -17,20 +17,17 @@ import Model.CategoryModel;
 @WebServlet("/addcategory")
 public class Category_add extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	protected void doGet(HttpServletRequest request,
-			HttpServletResponse response) throws ServletException, IOException {
-		doPost(request, response);
-	}
-	protected void Upload(HttpServletRequest request,
+
+	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html;charset=UTF-8");
 		request.setCharacterEncoding("utf-8");
 		try {
-			String namect = request.getParameter("categoryname");
-			Part part =request.getPart("photo");
+			String namect = request.getParameter("categoryname_cate");
+			Part part =request.getPart("photo_cate");
 			CategoryModel ct = new CategoryModel();
 			//String realPart =request.getServletContext().getRealPath("/Uploads");
-			String realPart ="F:\\JSP_Project\\JSP_Project\\WebContent\\Uploads";
+			String realPart ="F:\\SHOP\\JSP_Project\\JSP_Project\\WebContent\\Uploads";
 			String filename =Path.of(part.getSubmittedFileName()).getFileName().toString();
 			if(!Files.exists(Path.of(realPart))) {
 				Files.createDirectory(Path.of(realPart));
@@ -42,14 +39,9 @@ public class Category_add extends HttpServlet {
 		}
 		
 		response.sendRedirect("category_manager");
-	}
-	protected void doPost(HttpServletRequest request,
-			HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("text/html;charset=UTF-8");
-		Upload(request, response);
+
 	
 	}
-	
 	
  
 }

@@ -62,10 +62,10 @@
 						<div class="form-group">
 							<label for="exampleInputUsername1">Tên danh mục</label> <input
 								type="text" class="form-control" id="exampleInputUsername1"
-								placeholder="Danh mục" name="categoryname">
+								placeholder="Danh mục" name="categoryname_cate">
 						</div>
 						<div class="form-group">
-							<label>Ảnh</label> <input type="file" name="photo"
+							<label>Ảnh</label> <input type="file" name="photo_cate"
 								class="file-upload-default">
 							<div class="input-group col-xs-12">
 								<input type="text" class="form-control file-upload-info"

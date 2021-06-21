@@ -22,7 +22,7 @@ public class AdminModel {
 			ps.setString(2, password);
 			rs = ps.executeQuery();
 			while (rs.next()) {
-				return new Admin(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4));
+				return new Admin(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4),rs.getInt(5));
 
 			}
 		} catch (Exception e) {

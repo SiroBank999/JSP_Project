@@ -80,7 +80,7 @@ public class CategoryModel {
 	}
 	public void addCategory(String categoryname ,String image) {
 			
-			String query = "insert into category(categoryname,image) values(?,?)";
+			String query = "insert into category(categoryname,images) values(?,?)";
 			try {
 				conn = Database.ketNoi();
 				ps = conn.prepareStatement(query);

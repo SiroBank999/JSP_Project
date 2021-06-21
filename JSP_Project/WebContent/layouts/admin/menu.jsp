@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+        <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
@@ -40,7 +41,7 @@
               </ul>
             </div>
           </li>
-       
+       	  <c:if test="${sessionScope.admin.level == 1}">
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
               <i class="ti-user menu-icon"></i>
@@ -54,5 +55,6 @@
               </ul>
             </div>
           </li>
+          </c:if>
         </ul>
       </nav>

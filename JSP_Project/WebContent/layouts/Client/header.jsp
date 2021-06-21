@@ -50,8 +50,8 @@
 							<ul class="navbar_menu">
 								<li><a href="home_client">Trang Chủ</a></li>
 								<li><a href="shop">Cửa Hàng</a></li>
-								<li><a href="#">Tin tức</a></li>
-								<li><a href="news">Giới Thiệu</a></li>
+								<li><a href="news">Tin tức</a></li>
+								<li><a href="blog">Giới Thiệu</a></li>
 								<li><a href="contact">Liên Hệ</a></li>
 							</ul>
 							<ul class="navbar_user">

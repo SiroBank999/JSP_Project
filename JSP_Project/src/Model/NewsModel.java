@@ -22,7 +22,7 @@ public class NewsModel {
 			ps = conn.prepareStatement(query);
 			rs = ps.executeQuery();
 			while (rs.next()) {
-				listNews.add(new News(rs.getInt(1), rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6),rs.getInt(7)));
+				listNews.add(new News(rs.getInt(1), rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6),rs.getString(7)));
 			}
 		} catch (Exception e) {
 		}
@@ -45,7 +45,7 @@ public class NewsModel {
 				nw.setImage(rs.getString(4));
 				nw.setContent(rs.getString(5));
 				nw.setId_admin(rs.getInt(6));
-				nw.setStatus(rs.getInt(8));
+				nw.setType(rs.getString(8));
 				}
 			
 		}

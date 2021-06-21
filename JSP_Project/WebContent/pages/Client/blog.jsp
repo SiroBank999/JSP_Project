@@ -70,6 +70,31 @@
 
 		
 		
+<div class="blogs">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<div class="section_title">
+						<h2>THỜI TRANG NƯỚC NGOÀI</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row blogs_container">
+			<c:forEach items="${news}" var="news">
+				<div class="col-lg-4 blog_item_col">
+					<div class="blog_item">
+						<div class="blog_background" style="background-image:url(Uploads/${news.image})"></div>
+						<div class="blog_content d-flex flex-column align-items-center justify-content-center text-center">
+							<h4 class="blog_title">${news.title }</h4>
+							<span class="blog_meta">${news.describe }</span>
+							<a class="blog_more" href="detail_news?id=${news.id}">Đọc Thêm</a>
+						</div>
+					</div>
+				</div>
+				</c:forEach>
+			</div>
+	</div>
+	</div>
 			<!-- Newsletter -->
 
 	<div class="newsletter">

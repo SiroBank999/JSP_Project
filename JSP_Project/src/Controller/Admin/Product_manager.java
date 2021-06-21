@@ -34,7 +34,7 @@ public class Product_manager extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		CategoryModel categoryModel = new CategoryModel();
-		List<Category> listcate = categoryModel.getCategory();
+		List<Category> listcate = categoryModel.getListCategory();
 		String indexPage = request.getParameter("index");
 		if(indexPage == null) {
 			indexPage = "1";

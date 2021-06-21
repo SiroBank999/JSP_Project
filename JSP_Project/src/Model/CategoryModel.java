@@ -63,7 +63,7 @@ public class CategoryModel {
 		}
 		return list;
 	}
-	public List<Category> getlistCategory(){
+	public List<Category> getListCategory(){
 		List<Category> list = new ArrayList<>();
 		String query = "select * from category  ";
 		try {

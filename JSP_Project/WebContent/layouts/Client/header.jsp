@@ -26,8 +26,8 @@
 										<i class="fa fa-angle-down"></i>
 									</a>
 									<ul class="account_selection">
-										<li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Đăng Nhập</a></li>
-										<li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>Đăng Kí</a></li>
+										<li><a href="login_user"><i class="fa fa-sign-in" aria-hidden="true"></i>Đăng Nhập</a></li>
+										<li><a href="registraton"><i class="fa fa-user-plus" aria-hidden="true"></i>Đăng Kí</a></li>
 									</ul>
 								</li>
 							</ul>

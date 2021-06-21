@@ -193,7 +193,7 @@
 											<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>${pd.status}</span></div>
 											<div class="product_info">
 												<h6 class="product_name"><a href="detail?id=${pd.id}">${pd.productname}</a></h6>
-												<div class="product_price"><fmt:formatNumber type = "number"  maxFractionDigits = "3" value = "${pd.price}" /> đ<span></span></div>
+												<div class="product_price"><fmt:formatNumber type = "number"  maxFractionDigits = "3" value = "${pd.price}" /><strong>đ</strong> <span></span></div>
 											</div>
 										</div>
 										<div class="red_buttons add_to_cart_buttons"><a href="#">Thêm vào giỏ</a></div>
@@ -218,7 +218,7 @@
 
 	<div class="benefit">
 		<div class="container">
-			<div class="row benefit_row">
+			<div class="row benefit_row">	
 				<div class="col-lg-3 benefit_col">
 					<div class="benefit_item d-flex flex-row align-items-center">
 						<div class="benefit_icon"><i class="fa fa-truck" aria-hidden="true"></i></div>

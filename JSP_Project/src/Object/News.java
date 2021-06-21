@@ -7,7 +7,7 @@ public class News {
 	private String image;
 	private String content;
 	private int id_admin;
-	private String type ;
+	private String type;
 	public News() {
 		
 	}

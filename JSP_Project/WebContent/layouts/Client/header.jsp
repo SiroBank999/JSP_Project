@@ -12,15 +12,6 @@
 					<div class="col-md-6 text-right">
 						<div class="top_nav_right">
 							<ul class="top_nav_menu">
-
-								<!-- Currency / Language / My Account -->
-
-								<li class="currency">
-									
-								</li>
-								<li class="language">
-									
-								</li>
 								<li class="account">
 									<a href="#">
 										TÀI KHOẢN CÁ NHÂN
@@ -59,12 +50,13 @@
 							<ul class="navbar_menu">
 								<li><a href="home_client">Trang Chủ</a></li>
 								<li><a href="shop">Cửa Hàng</a></li>
+								<li><a href="#">Tin tức</a></li>
 								<li><a href="news">Giới Thiệu</a></li>
 								<li><a href="contact">Liên Hệ</a></li>
 							</ul>
 							<ul class="navbar_user">
 								<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-								<li>Xin chào:${sessionScope.user.fullname}</li>
+								<li>${sessionScope.user.fullname}</li>
 								<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
 								<li class="checkout">
 									<a href="#">

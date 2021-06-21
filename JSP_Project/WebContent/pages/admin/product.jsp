@@ -23,7 +23,7 @@
 									<form class="forms-sample" action="product_add" method="post" enctype="multipart/form-data">
 										<div class="form-group">
 											<label for="exampleInputUsername1">Tên sản phẩm</label> <input
-												type="text" class="form-control" name="productname"
+												type="text" class="form-control" name="productname_1"
 												placeholder="Tên sản phẩm">
 										</div>
 										<div class="form-group">
@@ -40,27 +40,27 @@
 										</div>
 										<div class="form-group">
 											<label for="exampleInputEmail1">Đơn giá</label> <input
-												type="text" class="form-control" name="price"
+												type="text" class="form-control" name="price_1"
 												placeholder="Đơn giá">
 										</div>
 										<div class="form-group">
 											<label for="exampleInputPassword1">Giảm giá</label> <input
-												type="text" class="form-control" name="sale"
+												type="text" class="form-control" name="sale_1"
 												placeholder="Giá giảm">
 										</div>
 										<div class="form-group">
 											<label for="exampleFormControlSelect3">Trạng thái</label> 
-											<select class="form-control form-control-sm" name="status">
-												<option>Mới</option>
-												<option>Giảm giá</option>
-												<option>Còn hàng</option>
-												<option>Hết hàng</option>
+											<select class="form-control form-control-sm" name="status_1">
+												<option>NEW</option>
+												<option>SALE</option>
+												<option>HOT</option>
+												<option>HẾT</option>
 
 											</select>
 										</div>
 										<div class="form-group">
 											<label for="exampleFormControlSelect">Danh mục</label> <select
-												class="form-control form-control-sm" name="category">
+												class="form-control form-control-sm" name="category_1">
 												<c:forEach items="${listcategory}" var="listc">
 													<option>${listc.categoryname}</option>
 												</c:forEach>
@@ -71,7 +71,7 @@
 										</div>
 										<div class="form-group">
 											<label for="exampleTextarea1">Mô tả</label>
-											<textarea class="form-control" name="describe" rows="4"></textarea>
+											<textarea class="form-control" name="describe_1" rows="4"></textarea>
 										</div>
 										<button type="submit" class="btn btn-success mr-2">Thêm mới</button>
 										

@@ -11,7 +11,7 @@
 
 				<div class="breadcrumbs d-flex flex-row align-items-center">
 					<ul>
-						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html">Trang Chủ</a></li>
 						<li class="active"><a href="home_client"><i class="fa fa-angle-right" aria-hidden="true"></i>Cửa hàng</a></li>
 					</ul>
 				</div>
@@ -21,7 +21,7 @@
 				<div class="sidebar">
 					<div class="sidebar_section">
 						<div class="sidebar_title">
-							<h5>Product Category</h5>
+							<h5>Danh Mục Sản Phẩm</h5>
 						</div>
 						<ul class="sidebar_categories">
 						<c:forEach items="${category}" var="cate">
@@ -33,13 +33,13 @@
 					<!-- Price Range Filtering -->
 					<div class="sidebar_section">
 						<div class="sidebar_title">
-							<h5>Filter by Price</h5>
+							<h5>Lọc Giá</h5>
 						</div>
 						<p>
 							<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
 						</p>
 						<div id="slider-range"></div>
-						<div class="filter_button"><span>filter</span></div>
+						<div class="filter_button"><span>Lọc</span></div>
 					</div>
 
 					<!-- Sizes -->
@@ -62,20 +62,17 @@
 							<h5>Màu</h5>
 						</div>
 						<ul class="checkboxes">
-							<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Black</span></li>
-							<li class="active"><i class="fa fa-square" aria-hidden="true"></i><span>Pink</span></li>
-							<li><i class="fa fa-square-o" aria-hidden="true"></i><span>White</span></li>
-							<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Blue</span></li>
-							<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Orange</span></li>
-							<li><i class="fa fa-square-o" aria-hidden="true"></i><span>White</span></li>
-							<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Blue</span></li>
-							<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Orange</span></li>
-							<li><i class="fa fa-square-o" aria-hidden="true"></i><span>White</span></li>
-							<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Blue</span></li>
-							<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Orange</span></li>
+							<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Đen</span></li>
+							<li class="active"><i class="fa fa-square" aria-hidden="true"></i><span>Hồng</span></li>
+							<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Trắng</span></li>
+							<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Xanh Dương</span></li>
+							<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Cam</span></li>
+							<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Xanh Lục</span></li>
+							<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Đỏ</span></li>
+							<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Tím</span></li>
 						</ul>
 						<div class="show_more">
-							<span><span>+</span>Show More</span>
+							<span><span>+</span>Xem Thêm</span>
 						</div>
 					</div>
 
@@ -96,16 +93,16 @@
 											
 									<ul class="product_sorting">
 										<li>
-											<span class="type_sorting_text">Default Sorting</span>
+											<span class="type_sorting_text">Tất Cả Sản Phẩm</span>
 											<i class="fa fa-angle-down"></i>
 											<ul class="sorting_type">
-												<li class="type_sorting_btn" data-isotope-option='{ "sortBy": "original-order" }'><span>Default Sorting</span></li>
-												<li class="type_sorting_btn" data-isotope-option='{ "sortBy": "price" }'><span>Price</span></li>
-												<li class="type_sorting_btn" data-isotope-option='{ "sortBy": "name" }'><span>Product Name</span></li>
+												<li class="type_sorting_btn" data-isotope-option='{ "sortBy": "original-order" }'><span>Tất Cả Sản Phẩm</span></li>
+												<li class="type_sorting_btn" data-isotope-option='{ "sortBy": "price" }'><span>Theo Giá</span></li>
+												<li class="type_sorting_btn" data-isotope-option='{ "sortBy": "name" }'><span>Theo Tên Sản Phẩm</span></li>
 											</ul>
 										</li>
 										<li>
-											<span>Show</span>
+											<span>Hiển Thị</span>
 											<span class="num_sorting_text">6</span>
 											<i class="fa fa-angle-down"></i>
 											<ul class="sorting_num">
@@ -171,13 +168,13 @@
 
 	<div class="benefit">
 		<div class="container">
-			<div class="row benefit_row">	
+			<div class="row benefit_row">
 				<div class="col-lg-3 benefit_col">
 					<div class="benefit_item d-flex flex-row align-items-center">
 						<div class="benefit_icon"><i class="fa fa-truck" aria-hidden="true"></i></div>
 						<div class="benefit_content">
-							<h6>free shipping</h6>
-							<p>Suffered Alteration in Some Form</p>
+							<h6>MIỄN PHÍ GIAO HÀNG</h6>
+							<p>với hóa đơn trên 500k</p>
 						</div>
 					</div>
 				</div>
@@ -185,8 +182,8 @@
 					<div class="benefit_item d-flex flex-row align-items-center">
 						<div class="benefit_icon"><i class="fa fa-money" aria-hidden="true"></i></div>
 						<div class="benefit_content">
-							<h6>cach on delivery</h6>
-							<p>The Internet Tend To Repeat</p>
+							<h6>GIÁ TIỀN HỢP LÝ</h6>
+							<p>đồ đẹp - sang chảnh</p>
 						</div>
 					</div>
 				</div>
@@ -194,8 +191,8 @@
 					<div class="benefit_item d-flex flex-row align-items-center">
 						<div class="benefit_icon"><i class="fa fa-undo" aria-hidden="true"></i></div>
 						<div class="benefit_content">
-							<h6>45 days return</h6>
-							<p>Making it Look Like Readable</p>
+							<h6>HOÀN TRẢ TRONG 30 NGÀY</h6>
+							<p>đối với những sản phẩm bị lỗi</p>
 						</div>
 					</div>
 				</div>
@@ -203,8 +200,8 @@
 					<div class="benefit_item d-flex flex-row align-items-center">
 						<div class="benefit_icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
 						<div class="benefit_content">
-							<h6>opening all week</h6>
-							<p>8AM - 09PM</p>
+							<h6>MỞ CỬA TỪ</h6>
+							<p>8h00 - 21h00</p>
 						</div>
 					</div>
 				</div>
@@ -219,15 +216,17 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="newsletter_text d-flex flex-column justify-content-center align-items-lg-start align-items-md-center text-center">
-						<h4>Newsletter</h4>
-						<p>Subscribe to our newsletter and get 20% off your first purchase</p>
+						<h4>Thư Ngỏ</h4>
+						<p>Hãy cho chúng tôi biết ý kiến của bạn</p>
 					</div>
 				</div>
 				<div class="col-lg-6">
-					<div class="newsletter_form d-flex flex-md-row flex-column flex-xs-column align-items-center justify-content-lg-end justify-content-center">
-						<input id="newsletter_email" type="email" placeholder="Your email" required="required" data-error="Valid email is required.">
-						<button id="newsletter_submit" type="submit" class="newsletter_submit_btn trans_300" value="Submit">subscribe</button>
-					</div>
+					<form action="post">
+						<div class="newsletter_form d-flex flex-md-row flex-column flex-xs-column align-items-center justify-content-lg-end justify-content-center">
+							<input id="newsletter_email" type="email" placeholder="Your email" required="required" data-error="Valid email is required.">
+							<button id="newsletter_submit" type="submit" class="newsletter_submit_btn trans_300" value="Submit">subscribe</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>

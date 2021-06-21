@@ -10,7 +10,7 @@
 				<div class="breadcrumbs d-flex flex-row align-items-center">
 					<ul>
 						<li><a href="index.html">Trang Chủ</a></li>
-						<li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Tin Tức</a></li>
+						<li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Giới Thiệu</a></li>
 					</ul>
 				</div>
 
@@ -18,7 +18,7 @@
 		</div> 
 		<div class="col text-center">
 					<div class="section_title">
-						<h2>BLOG MỚI NHẤT</h2>
+						<h2>GIỚI THIỆU</h2>
 					</div>
 				</div>
 				<br/>

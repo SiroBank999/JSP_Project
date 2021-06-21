@@ -38,7 +38,7 @@
 					<h1>Liên Hệ Với Chúng Tôi</h1>
 					<p>đến là đón, mua là thích</p>
 					<div>
-						<p>0888xxxxxx</p>
+						<p>0888888888</p>
 						<p>m3nshop@gmail.com</p>
 					</div>
 					<div>
@@ -53,12 +53,12 @@
 				<!-- Follow Us -->
 
 				<div class="follow_us_contents">
-					<h1>Follow Us</h1>
+					<h1>Theo dõi M3NS </h1>
 					<ul class="social d-flex flex-row">
-						<li><a href="#" style="background-color: #3a61c9"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="#" style="background-color: #41a1f6"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-						<li><a href="#" style="background-color: #fb4343"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-						<li><a href="#" style="background-color: #8f6247"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li><a href="#" style="background-color: #3a61c9"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" style="background-color: #41a1f6"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" style="background-color: #fb4343"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+						<li><a href="#" style="background-color: #8f6247"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
 
@@ -76,7 +76,7 @@
 							<textarea id="input_message" class="input_ph input_message" name="content"  placeholder="Phản hồi" rows="3" required data-error="Please, write us a message."></textarea>
 						</div>
 						<div>
-							<button id="review_submit" type="submit" class="red_button message_submit_btn trans_300" value="Submit">send message</button>
+							<button id="review_submit" type="submit" class="red_buttonsssss message_submit_btnsssss trans_300" value="Submit">Gửi</button>
 						</div>
 					</form>
 				</div>

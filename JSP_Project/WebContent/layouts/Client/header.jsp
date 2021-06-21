@@ -7,7 +7,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<div class="top_nav_left">Miễn phí giao hàng với hóa đơn trên 200k</div>
+						<div class="top_nav_left">Miễn phí giao hàng với hóa đơn trên 300k</div>
 					</div>
 					<div class="col-md-6 text-right">
 						<div class="top_nav_right">
@@ -44,7 +44,7 @@
 				<div class="row">
 					<div class="col-lg-12 text-right">
 						<div class="logo_container">
-							<a href="#">3<span> MENS</span></a>
+							<a href="#">M<span>3NS</span></a>
 						</div>
 						<nav class="navbar">
 							<ul class="navbar_menu">

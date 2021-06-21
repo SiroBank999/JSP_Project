@@ -9,9 +9,9 @@
 
 				<div class="breadcrumbs d-flex flex-row align-items-center">
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="categories.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Men's</a></li>
-						<li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Single Product</a></li>
+						<li><a href="index.html">Trang Chủ</a></li>
+						<li><a href="categories.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Cửa Hàng</a></li>
+						<li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Chi Tiết Sản Phẩm</a></li>
 					</ul>
 				</div>
 
@@ -31,7 +31,7 @@
 						</div>
 						<div class="col-lg-9 image_col order-lg-2 order-1">
 							<div class="single_product_image">
-								<img src="Uploads/${detail.image}" width="300px", height="200px"></image>
+								<img src="Uploads/${detail.image}" width="375px", height="436px"></image>
 							</div>
 						</div>
 					</div>
@@ -44,7 +44,7 @@
 						<p>${detail.describe}</p>
 					</div>
 					<div class="free_delivery d-flex flex-row align-items-center justify-content-center">
-						<span class="ti-truck"></span><span>free delivery</span>
+						<span class="ti-truck"></span><span>Miễn Phí Giao Hàng</span>
 					</div>
 					<div class="original_price">${detail.price}</div>
 					<div class="product_price">${detail.sale}</div>
@@ -57,13 +57,13 @@
 					</ul>
 					
 					<div class="quantity d-flex flex-column flex-sm-row align-items-sm-center">
-						<span>Quantity:</span>
+						<span>Số lượng:</span>
 						<div class="quantity_selector">
 							<span class="minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
 							<span id="quantity_value">1</span>
 							<span class="plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
 						</div>
-						<div class="red_buttonss add_to_cart_buttonss"><a href="#">add to cart</a></div>
+						<div class="red_buttonss add_to_cart_buttonss"><a href="#">Thêm vào giỏ hàng</a></div>
 						<div class="product_favorite d-flex flex-column align-items-center justify-content-center"></div>
 					</div>
 				</div>
@@ -81,9 +81,9 @@
 				<div class="col">
 					<div class="tabs_container">
 						<ul class="tabs d-flex flex-sm-row flex-column align-items-left align-items-md-center justify-content-center">
-							<li class="tab active" data-active-tab="tab_1"><span>Description</span></li>
-							<li class="tab" data-active-tab="tab_2"><span>Additional Information</span></li>
-							<li class="tab" data-active-tab="tab_3"><span>Reviews (2)</span></li>
+							<li class="tab active" data-active-tab="tab_1"><span>Mô Tả</span></li>
+							<li class="tab" data-active-tab="tab_2"><span>Chi Tiết Sản Phẩm</span></li>
+							<li class="tab" data-active-tab="tab_3"><span>Nhận Xét (2)</span></li>
 						</ul>
 					</div>
 				</div>
@@ -97,7 +97,7 @@
 						<div class="row">
 							<div class="col-lg-5 desc_col">
 								<div class="tab_title">
-									<h4>Description</h4>
+									<h4>Mô Tả</h4>
 								</div>
 								<div class="tab_text_block">
 									<h2>Pocket cotton sweatshirt</h2>
@@ -132,10 +132,10 @@
 						<div class="row">
 							<div class="col additional_info_col">
 								<div class="tab_title additional_info_title">
-									<h4>Additional Information</h4>
+									<h4>Chi Tiết Sản Phẩm</h4>
 								</div>
-								<p>COLOR:<span>Gold, Red</span></p>
-								<p>SIZE:<span>L,M,XL</span></p>
+								<p>Màu:<span>Gold, Red</span></p>
+								<p>Cỡ:<span>L,M,XL</span></p>
 							</div>
 						</div>
 					</div>
@@ -149,7 +149,7 @@
 
 							<div class="col-lg-6 reviews_col">
 								<div class="tab_title reviews_title">
-									<h4>Reviews (2)</h4>
+									<h4>Nhận Xét (2)</h4>
 								</div>
 
 								<!-- User Review -->
@@ -204,12 +204,12 @@
 								<div class="add_review">
 									<form id="review_form" action="post">
 										<div>
-											<h1>Add Review</h1>
-											<input id="review_name" class="form_input input_name" type="text" name="name" placeholder="Name*" required="required" data-error="Name is required.">
+											<h1>Thông Tin</h1>
+											<input id="review_name" class="form_input input_name" type="text" name="name" placeholder="Họ và Tên*" required="required" data-error="Name is required.">
 											<input id="review_email" class="form_input input_email" type="email" name="email" placeholder="Email*" required="required" data-error="Valid email is required.">
 										</div>
 										<div>
-											<h1>Your Rating:</h1>
+											<h1>Đánh Giá:</h1>
 											<ul class="user_star_rating">
 												<li><i class="fa fa-star" aria-hidden="true"></i></li>
 												<li><i class="fa fa-star" aria-hidden="true"></i></li>
@@ -217,10 +217,10 @@
 												<li><i class="fa fa-star" aria-hidden="true"></i></li>
 												<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
 											</ul>
-											<textarea id="review_message" class="input_review" name="message"  placeholder="Your Review" rows="4" required data-error="Please, leave us a review."></textarea>
+											<textarea id="review_message" class="input_review" name="message"  placeholder="Nhận xét của bạn" rows="4" required data-error="Hãy để lại nhận xét"></textarea>
 										</div>
 										<div class="text-left text-sm-right">
-											<button id="review_submit" type="submit" class="red_button review_submit_btn trans_300" value="Submit">submit</button>
+											<button id="review_submit" type="submit" class="red_buttonz review_submit_btnz trans_300" value="Submit">Gửi</button>
 										</div>
 									</form>
 								</div>
@@ -245,8 +245,8 @@
 					<div class="benefit_item d-flex flex-row align-items-center">
 						<div class="benefit_icon"><i class="fa fa-truck" aria-hidden="true"></i></div>
 						<div class="benefit_content">
-							<h6>free shipping</h6>
-							<p>Suffered Alteration in Some Form</p>
+							<h6>MIỄN PHÍ GIAO HÀNG</h6>
+							<p>với hóa đơn trên 500k</p>
 						</div>
 					</div>
 				</div>
@@ -254,8 +254,8 @@
 					<div class="benefit_item d-flex flex-row align-items-center">
 						<div class="benefit_icon"><i class="fa fa-money" aria-hidden="true"></i></div>
 						<div class="benefit_content">
-							<h6>cach on delivery</h6>
-							<p>The Internet Tend To Repeat</p>
+							<h6>GIÁ TIỀN HỢP LÝ</h6>
+							<p>đồ đẹp - sang chảnh</p>
 						</div>
 					</div>
 				</div>
@@ -263,8 +263,8 @@
 					<div class="benefit_item d-flex flex-row align-items-center">
 						<div class="benefit_icon"><i class="fa fa-undo" aria-hidden="true"></i></div>
 						<div class="benefit_content">
-							<h6>45 days return</h6>
-							<p>Making it Look Like Readable</p>
+							<h6>HOÀN TRẢ TRONG 30 NGÀY</h6>
+							<p>đối với những sản phẩm bị lỗi</p>
 						</div>
 					</div>
 				</div>
@@ -272,8 +272,8 @@
 					<div class="benefit_item d-flex flex-row align-items-center">
 						<div class="benefit_icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
 						<div class="benefit_content">
-							<h6>opening all week</h6>
-							<p>8AM - 09PM</p>
+							<h6>MỞ CỬA TỪ</h6>
+							<p>8h00 - 21h00</p>
 						</div>
 					</div>
 				</div>
@@ -288,8 +288,8 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="newsletter_text d-flex flex-column justify-content-center align-items-lg-start align-items-md-center text-center">
-						<h4>Newsletter</h4>
-						<p>Subscribe to our newsletter and get 20% off your first purchase</p>
+						<h4>Thư Ngỏ</h4>
+						<p>Hãy cho chúng tôi biết ý kiến của bạn</p>
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -303,5 +303,4 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- Footer -->

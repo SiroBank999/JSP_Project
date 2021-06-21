@@ -13,7 +13,7 @@
 			<div class="row align-items-center fill_height">
 				<div class="col">
 					<div class="main_slider_content">
-						<h6>3 MENS/ PETSHOP</h6>
+						<h6>M3NS/ FASHION</h6>
 						<h2>${b.title}</h2>
 						<div class="red_button shop_now_button"><a href="shop">THAM QUAN</a></div>
 					</div>
@@ -48,7 +48,7 @@
 			<div class="row">
 				<div class="col text-center">
 					<div class="section_title new_arrivals_title">
-						<h2>MỚI NHẤT</h2>
+						<h2>SẢN PHẨM MỚI</h2>
 					</div>
 				</div>
 			</div>
@@ -145,7 +145,7 @@
 			<div class="row">
 				<div class="col text-center">
 					<div class="section_title new_arrivals_title">
-						<h2>Bán Chạy</h2>
+						<h2>SẢN PHẨM HOT</h2>
 					</div>
 				</div>
 			</div>
@@ -203,7 +203,7 @@
 						<div class="benefit_icon"><i class="fa fa-truck" aria-hidden="true"></i></div>
 						<div class="benefit_content">
 							<h6>MIỄN PHÍ GIAO HÀNG</h6>
-							<p>aaaaaaaa</p>
+							<p>với hóa đơn trên 500k</p>
 						</div>
 					</div>
 				</div>
@@ -212,7 +212,7 @@
 						<div class="benefit_icon"><i class="fa fa-money" aria-hidden="true"></i></div>
 						<div class="benefit_content">
 							<h6>GIÁ TIỀN HỢP LÝ</h6>
-							<p>aaaaaaaaa</p>
+							<p>đồ đẹp - sang chảnh</p>
 						</div>
 					</div>
 				</div>
@@ -221,7 +221,7 @@
 						<div class="benefit_icon"><i class="fa fa-undo" aria-hidden="true"></i></div>
 						<div class="benefit_content">
 							<h6>HOÀN TRẢ TRONG 30 NGÀY</h6>
-							<p>aaaaaaaaaa</p>
+							<p>đối với những sản phẩm bị lỗi</p>
 						</div>
 					</div>
 				</div>
@@ -237,7 +237,6 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- Blogs -->
 
 		<div class="blogs">

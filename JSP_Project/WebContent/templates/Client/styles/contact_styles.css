@@ -816,7 +816,7 @@ section
 {
 	color: #fe4c50;
 }
-.red_button
+.red_buttonsssss
 {
 	display: -webkit-inline-box;
 	display: -moz-inline-box;
@@ -836,11 +836,11 @@ section
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
-.red_button:hover
+.red_buttonsssss:hover
 {
 	background: #FE7C7F !important;
 }
-.red_button a
+.red_buttonsssss a
 {
 	display: block;
 	color: #FFFFFF;
@@ -882,9 +882,7 @@ section
 	content: '';
 }
 .product_details_title p
-{
-	color: #;
-}
+
 
 /*********************************
 4. Breadcrumbs
@@ -1051,7 +1049,7 @@ section
 	border: solid 1px #7f7f7f !important;
 	box-shadow: none !important;
 }
-.message_submit_btn
+.message_submit_btnsssss
 {
 	background: #1e1e27;
 	color: #FFFFFF;
@@ -1061,7 +1059,7 @@ section
 	height: 46px;
 	cursor: pointer;
 }
-.message_submit_btn:hover
+.message_submit_btnsssss:hover
 {
 	background: #2b2b34 !important;
 }

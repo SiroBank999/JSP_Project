@@ -816,7 +816,7 @@ section
 {
 	color: #fe4c50;
 }
-.red_buttonss
+.red_buttonz
 {
 	display: -webkit-inline-box;
 	display: -moz-inline-box;
@@ -836,11 +836,11 @@ section
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
-.red_buttonss:hover
+.red_buttonz:hover
 {
 	background: #FE7C7F !important;
 }
-.red_buttonss a
+.red_buttonz a
 {
 	display: block;
 	color: #FFFFFF;
@@ -1374,7 +1374,7 @@ section
 	color: #f5c136;
 	font-size: 18px;
 }
-.review_submit_btn
+.review_submit_btnz
 {
 	width: 170px;
 	border: none;

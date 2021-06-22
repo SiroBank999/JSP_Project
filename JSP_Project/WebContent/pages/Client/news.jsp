@@ -2,13 +2,18 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <div class="container contact_container">
-
+<div class="breadcrumbs d-flex flex-row align-items-center">
+					<ul>
+						<li><a href="home_client">Trang Chủ</a></li>
+						<li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Tin Tức</a></li>
+					</ul>
+				</div>
 	<div class="blogs">
 		<div class="container">
 			<div class="row">
 				<div class="col text-center">
 					<div class="section_title">
-						<h2></h2>
+						<h2>TIN TỨC TRONG TUẦN</h2>
 					</div>
 				</div>
 			</div>

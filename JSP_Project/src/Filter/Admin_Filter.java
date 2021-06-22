@@ -50,7 +50,7 @@ public class Admin_Filter implements Filter {
 			httpServletResponse.sendRedirect("login");
 			return;
 		}
-		chain.doFilter(request, response);
+		
 	}
 
 	/**

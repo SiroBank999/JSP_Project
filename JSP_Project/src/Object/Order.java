@@ -10,12 +10,15 @@ public class Order {
 	
 	public Order() {
 	}
+	
 	public Order(int id, User user, List<Item> items, String status) {
 		this.id = id;
 		this.user = user;
 		this.items = items;
 		this.status = status;
+
 	}
+
 	public int getId() {
 		return id;
 	}
@@ -40,11 +43,22 @@ public class Order {
 	public void setStatus(String status) {
 		this.status = status;
 	}
+	
+	
+	public double getTotal() {
+		double total =0;
+		for(Item item: items ) {
+			total +=item.getPrice()*item.getQuantity();
+		}
+		
+		return total;
+	}
+
 	@Override
 	public String toString() {
 		return "Order [id=" + id + ", user=" + user + ", items=" + items + ", status=" + status + "]";
 	}
-	
+
 	
 
 }

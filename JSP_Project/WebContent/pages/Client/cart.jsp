@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
 <div class="fs_menu_overlay"></div>
 <div class="container product_section_container">
 <div class="blogs">
@@ -39,6 +40,7 @@
                                                 <th scope="col" class="border-0 bg-light">
                                                     <div class="py-2 text-uppercase">Số Lượng</div>
                                                 </th>
+                                             
                                                 <th scope="col" class="border-0 bg-light">
                                                     <div class="py-2 text-uppercase">Xóa</div>
                                                 </th>
@@ -55,12 +57,14 @@
                                                             </div>
                                                         </div>
                                                     </th>
-                                                    <td class="align-middle"><strong>${item.product.price}</strong></td>
+                                                    <td class="align-middle"><strong><fmt:formatNumber type = "number"  maxFractionDigits = "3" value = "${item.product.price}" /> đ</strong></td>
+                                                    
                                                     <td class="align-middle">
-                                                        <a href="sub?id="><button class="btn">-</button></a> <strong>${item.quantity}</strong>
+                                                        <a href="cart_sub?idP=${item.product.id}"><button class="btn">-</button></a> <strong>${item.quantity}</strong>
                                                         <a href="cart_add?idP=${item.product.id}"><button class="btn">+</button></a>
                                                     </td>
-                                                            <td class="align-middle"><a href="remove?id=" class="text-dark">
+                                                  
+                                                            <td class="align-middle"><a href="cart_remove?id=${item.id}" class="text-dark">
                                                         <button type="button" class="btn btn-danger"><i class="ti-trash"></i></button>
                                                         </a>
                                                     </td>
@@ -90,11 +94,11 @@
                                 <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Thành tiền</div>
                                 <div class="p-4">
                                     <ul class="list-unstyled mb-4">
-                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tổng tiền hàng</strong><strong>${total}</strong></li>
-                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Phí vận chuyển</strong><strong>Free ship</strong></li>
-                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">VAT</strong><strong>${vat}</strong></li>
+                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tổng tiền hàng</strong><strong><fmt:formatNumber type = "number"  maxFractionDigits = "3" value = "${order.getTotal()}" /></strong></li>
+                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Phí vận chuyển</strong><strong>Miễn phí</strong></li>
+                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">VAT</strong>5%<strong><fmt:formatNumber type = "number"  maxFractionDigits = "3" value = "${order.getTotal()*0.05}" />đ</strong></li>
                                         <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tổng thanh toán</strong>
-                                            <h5 class="font-weight-bold">${sum} ₫</h5>
+                                            <h5 class="font-weight-bold"><fmt:formatNumber type = "number"  maxFractionDigits = "3" value = "${order.getTotal()*1.05}" /> ₫</h5>
                                         </li>
                                     </ul><a href="order" class="btn btn-dark rounded-pill py-2 btn-block">Mua hàng</a>
                                 </div>

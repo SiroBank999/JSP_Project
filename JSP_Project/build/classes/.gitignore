@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-/Model/
-/Controller/
-=======
-/Controller/
 /Model/
 /Object/
->>>>>>> 98f444d1eaa3e60e0446f87574def7570d1d3043
+/Controller/

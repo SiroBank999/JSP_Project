@@ -5,7 +5,6 @@ public class Item {
 	private Product product;
 	private int quantity;
 	private double price;
-	
 	public Item() {
 	}
 

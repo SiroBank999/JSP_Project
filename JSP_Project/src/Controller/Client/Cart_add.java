@@ -26,6 +26,7 @@ public class Cart_add extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		int quantity = 1;
 		int id;
+		
 		ProductModel pm = new ProductModel();
 		if(request.getParameter("idP") != null) {
 			id = Integer.parseInt(request.getParameter("idP"));
@@ -66,7 +67,9 @@ public class Cart_add extends HttpServlet {
 						listItems.add(item);
 						
 					}
+					
 					session.setAttribute("order", order);
+					
 					//session.setMaxInactiveInterval(6000);
 					
 				}

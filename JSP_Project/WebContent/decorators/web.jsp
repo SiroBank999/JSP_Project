@@ -29,6 +29,7 @@
 <link rel="stylesheet" href="templates/Client/styles/news_styles.css">
 <link rel="stylesheet" href="templates/Client/styles/bill_styles.css">
 <link rel="stylesheet" href="templates/Client/styles/more_styles.css">
+
 </head>
 <body>
 

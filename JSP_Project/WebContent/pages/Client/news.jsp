@@ -29,7 +29,6 @@
 				</c:forEach>
 			</div>
 		</div>
-		aaaaaaaaaaaaaaaaaa
 		<br>
 		<div class="text-center">
 			<c:if test="${tag >1 }">

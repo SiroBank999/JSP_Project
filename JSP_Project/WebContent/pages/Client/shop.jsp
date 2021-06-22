@@ -146,7 +146,7 @@
 												<div class="product_price"><fmt:formatNumber type = "number"  maxFractionDigits = "3" value = "${pd.price}" /><span></span><strong>đ</strong></div>
 											</div>
 										</div>
-										<div class="red_buttons add_to_cart_buttons"><a href="#">Thêm vào giỏ</a></div>
+										<div class="red_buttons add_to_cart_buttons"><a href="cart_add?idP=${pd.id}">Thêm vào giỏ</a></div>
 									</div>
 									</c:forEach>	
 									

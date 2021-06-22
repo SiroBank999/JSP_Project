@@ -1,6 +1,6 @@
 eclipse.preferences.version=1
 encoding//WebContent/pages/Client/infouser.jsp=UTF-8
 encoding//src/Controller/Admin/Category_add.java=UTF-8
-encoding//src/Controller/Client/Registraton_controller.java=UTF-8
+encoding//src/Controller/Client/Registration_controller.java=UTF-8
 encoding//src/Model/Database.java=UTF-8
 encoding//src/Model/ProductModel.java=UTF-8

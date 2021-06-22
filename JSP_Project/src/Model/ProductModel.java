@@ -87,9 +87,9 @@ public class ProductModel {
 		}
 		return listProduct;
 	}
-	public List<Product> getProductsale() {
+	public List<Product> getProductNew() {
 		List<Product> listProduct = new ArrayList<>();
-		String query = "select*from product where statusp='Giảm giá' ";
+		String query = "select*from product where statusp='NEW' ";
 		try {
 			conn = Database.ketNoi();
 			ps = conn.prepareStatement(query);

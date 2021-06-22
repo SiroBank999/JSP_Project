@@ -60,9 +60,9 @@ public class Home_controller extends HttpServlet {
 	}
 	protected void getProductsale(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ProductModel pm = new ProductModel();
-		List<Product> listproductsale = pm.getProductsale();
+		List<Product> listproductnew = pm.getProductNew();
 		List<Product> listproducthot = pm.getProducthot();
-		request.setAttribute("listproductsale", listproductsale);
+		request.setAttribute("listproductnew", listproductnew);
 		request.setAttribute("listproducthot", listproducthot);
 		
 	}

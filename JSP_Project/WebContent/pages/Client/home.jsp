@@ -31,7 +31,7 @@
 				<div class="col-md-4">
 					<div class="banner_item align-items-center" style="background-image:url(Uploads/${listcategory.images})">
 						<div class="banner_category">
-							<a href="categories.html">${listcategory.categoryname}</a>
+							<a href="shop_load?id_category=${listcategory.id}">${listcategory.categoryname}</a>
 						</div>
 					</div>
 				</div>
@@ -48,7 +48,7 @@
 			<div class="row">
 				<div class="col text-center">
 					<div class="section_title new_arrivals_title">
-						<h2>SẢN PHẨM GIẢM GIÁ</h2>
+						<h2>SẢN PHẨM MỚI</h2>
 					</div>
 				</div>
 			</div>
@@ -57,8 +57,8 @@
 					<div class="product_slider_container">
 						<div class="owl-carousel owl-theme product_slider">
 
-							<!-- Slide 1 -->
-				<c:forEach items="${listproductsale}" var="sale">
+						<!-- Slide 1 -->
+						<c:forEach items="${listproductnew}" var="sale">
 							<div class="owl-item product_slider_item">
 								<div class="product-item">
 									<div class="product discount">
@@ -66,17 +66,24 @@
 											<img src="Uploads/${sale.image }" alt="">
 										</div>
 										<div class="favorite favorite_left"></div>
-										<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-$20</span></div>
+										<div
+											class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
+											<span>${sale.status}</span>
+										</div>
 										<div class="product_info">
-											<h6 class="product_name"><a href="detail?id=${sale.id}">${sale.productname}</a></h6>
-											<div class="product_price">${sale.sale}<span>${sale.price} </span></div>
+											<h6 class="product_name">
+												<a href="detail?id=${sale.id}">${sale.productname}</a>
+											</h6>
+											<div class="product_price">${sale.sale}<span>${sale.price}
+												</span>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							</c:forEach>
+						</c:forEach>
 
-							<!-- Slide 2 -->
+						<!-- Slide 2 -->
 
 							<!-- Slide 10 -->
 
@@ -161,7 +168,7 @@
 											<img src="Uploads/${hot.image }" alt="">
 										</div>
 										<div class="favorite favorite_left"></div>
-										<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-$20</span></div>
+										<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>${hot.status}</span></div>
 										<div class="product_info">
 											<h6 class="product_name"><a href="detail?id=${hot.id}">${hot.productname}</a></h6>
 											<div class="product_price">${hot.sale}<span>${hot.price} </span></div>

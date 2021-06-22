@@ -67,7 +67,7 @@
 								<li><a href="info?id=${sessionScope.user.id}"><i class="fa fa-user" aria-hidden="true"></i></a></li>
 								</c:if>
 								<li class="checkout">
-									<a href="#">
+									<a href="cart">
 										<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 										<span id="checkout_items" class="checkout_items"></span>
 									</a>

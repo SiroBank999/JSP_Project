@@ -10,16 +10,16 @@ import javax.servlet.http.HttpServletResponse;
 import Model.UserModel;
 
 /**
- * Servlet implementation class Registraton_controller
+ * Servlet implementation class Registration_controller
  */
 @WebServlet("/registraton")
-public class Registraton_controller extends HttpServlet {
+public class Registration_controller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Registraton_controller() {
+    public Registration_controller() {
         super();
         // TODO Auto-generated constructor stub
     }

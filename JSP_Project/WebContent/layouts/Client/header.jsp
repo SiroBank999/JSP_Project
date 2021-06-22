@@ -55,18 +55,21 @@
 								<li><a href="contact">Liên Hệ</a></li>
 							</ul>
 							<ul class="navbar_user">
-								<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-								<c:if test="${sessionScope.user!= null}">
+								<li class="dropdown" ><button onclick="myFunction()" class="dropbtn"><i class="fa fa-search" aria-hidden="true"></i></button>
+								<div id="myDropdown" class="dropdown-content">
+									<input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()"> 
+									
+								</div></li>
 								<li>${sessionScope.user.fullname}</li>
-								<li><a href="info?id=${sessionScope.user.id}"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-								</c:if>
+								<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
 								<li class="checkout">
-									<a href="cart">
+									<a href="#">
 										<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-										<span id="checkout_items" class="checkout_items"></span>
+										<span id="checkout_items" class="checkout_items">2</span>
 									</a>
 								</li>
 							</ul>
+							
 							<div class="hamburger_container">
 								<i class="fa fa-bars" aria-hidden="true"></i>
 							</div>

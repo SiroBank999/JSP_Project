@@ -42,7 +42,7 @@ public class Home_controller extends HttpServlet {
 		BannerModel bm = new BannerModel();
 		List<Banner> list = bm.getBanner();
 		NewsModel nm = new NewsModel();
-		List<News> listNews  = nm.getNews();
+		List<News> listNews  = nm.getNewsLimit();
 		request.setAttribute("news",listNews );
 		request.setAttribute("banner", list);
 		request.setAttribute("listcategory", listcate);
@@ -61,9 +61,11 @@ public class Home_controller extends HttpServlet {
 	protected void getProductsale(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ProductModel pm = new ProductModel();
 		List<Product> listproductsale = pm.getProductsale();
+		List<Product> listproducthot = pm.getProducthot();
 		request.setAttribute("listproductsale", listproductsale);
-		
+		request.setAttribute("listproducthot", listproducthot);
 		
 	}
+	
 
 }

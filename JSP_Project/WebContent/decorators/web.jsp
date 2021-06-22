@@ -29,6 +29,7 @@
 <link rel="stylesheet" href="templates/Client/styles/news_styles.css">
 <link rel="stylesheet" href="templates/Client/styles/bill_styles.css">
 <link rel="stylesheet" href="templates/Client/styles/more_styles.css">
+<link rel="stylesheet" href="templates/Client/styles/menu.css">
 
 </head>
 <body>
@@ -53,5 +54,6 @@
 <script src="templates/Client/js/single_custom.js"></script>
 <script src="templates/Client/js/contact_custom.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="templates/Client/js/drop.js"></script>
 </body>
 </html>

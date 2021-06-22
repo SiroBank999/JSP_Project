@@ -48,7 +48,7 @@
 			<div class="row">
 				<div class="col text-center">
 					<div class="section_title new_arrivals_title">
-						<h2>SẢN PHẨM HOT</h2>
+						<h2>SẢN PHẨM GIẢM GIÁ</h2>
 					</div>
 				</div>
 			</div>
@@ -138,7 +138,58 @@
 
 	<!-- Best Sellers -->
 
-		
+	<div class="best_sellers">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<div class="section_title new_arrivals_title">
+						<h2>SẢN PHẨM HOT</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="product_slider_container">
+						<div class="owl-carousel owl-theme product_slider">
+
+							<!-- Slide 1 -->
+				<c:forEach items="${listproducthot}" var="hot">
+							<div class="owl-item product_slider_item">
+								<div class="product-item">
+									<div class="product discount">
+										<div class="product_image">
+											<img src="Uploads/${hot.image }" alt="">
+										</div>
+										<div class="favorite favorite_left"></div>
+										<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-$20</span></div>
+										<div class="product_info">
+											<h6 class="product_name"><a href="detail?id=${hot.id}">${hot.productname}</a></h6>
+											<div class="product_price">${hot.sale}<span>${hot.price} </span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							</c:forEach>
+
+							<!-- Slide 2 -->
+
+							<!-- Slide 10 -->
+
+						</div>
+
+						<!-- Slider Navigation -->
+
+						<div class="product_slider_nav_left product_slider_nav d-flex align-items-center justify-content-center flex-column">
+							<i class="fa fa-chevron-left" aria-hidden="true"></i>
+						</div>
+						<div class="product_slider_nav_right product_slider_nav d-flex align-items-center justify-content-center flex-column">
+							<i class="fa fa-chevron-right" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>		
 
 	<!-- Benefit -->
 

@@ -29,6 +29,20 @@ public class NewsModel {
 		}
 		return listNews;
 	}
+	public List<News> getNewsLimit() {
+		List<News> listNews = new ArrayList<>();
+		String query = "select*from news limit 3 ";
+		try {
+			conn = Database.ketNoi();
+			ps = conn.prepareStatement(query);
+			rs = ps.executeQuery();
+			while (rs.next()) {
+				listNews.add(new News(rs.getInt(1), rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6),rs.getString(7)));
+			}
+		} catch (Exception e) {
+		}
+		return listNews;
+	}
 	public News getNewbyId(int id) {
 		News nw = new News();
 		String query = "select*from news where id= ? ";

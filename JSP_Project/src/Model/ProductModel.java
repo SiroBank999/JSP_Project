@@ -102,6 +102,21 @@ public class ProductModel {
 		}
 		return listProduct;
 	}
+	public List<Product> getProducthot() {
+		List<Product> listProduct = new ArrayList<>();
+		String query = "select*from product where statusp='HOT' ";
+		try {
+			conn = Database.ketNoi();
+			ps = conn.prepareStatement(query);
+			rs = ps.executeQuery();
+			while (rs.next()) {
+				listProduct.add(new Product(rs.getInt(1), rs.getString(2), rs.getDouble(3), rs.getDouble(4),
+						rs.getString(5), rs.getString(6), rs.getString(7), rs.getString(8), rs.getInt(9)));
+			}
+		} catch (Exception e) {
+		}
+		return listProduct;
+	}
 	public List<Product> getProductbyIdcategory(int id ) {
 		List<Product> listProduct = new ArrayList<>();
 		String query = "select*from product where id_category=?";

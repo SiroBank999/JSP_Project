@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
+import Object.Category;
 import Object.News;
 import Object.Product;
 
@@ -55,5 +56,39 @@ public class NewsModel {
 		
 		return nw;
 	
+	}
+	public int getTotalNews() {
+		String query = "select count(*) from news";
+		try {
+			conn = Database.ketNoi();
+			ps = conn.prepareStatement(query);
+			rs = ps.executeQuery();
+			while (rs.next()) {
+				return rs.getInt(1);
+			}
+		} catch (Exception e) {
+			
+		}
+		
+		
+		return 0;
+	}
+	public List<News> pagingNews(int index){
+		List<News> list = new ArrayList<>();
+		String query = "SELECT * FROM news \r\n"
+				+ "ORDER BY id DESC \r\n"
+				+ "LIMIT ? , 9";
+		try {
+			conn = Database.ketNoi();
+			ps = conn.prepareStatement(query);
+			ps.setInt(1, (index-1) * 9);
+			rs = ps.executeQuery();
+			while(rs.next()) {
+				list.add(new News(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getInt(6),rs.getString(7)));
+			}
+		} catch (Exception e) {
+			
+		}
+		return list;
 	}
 }

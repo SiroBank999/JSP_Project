@@ -52,7 +52,7 @@ public class Product_update extends HttpServlet {
 			Part part =request.getPart("photo");
 			ProductModel pm = new  ProductModel();
 			
-			String realPart ="F:\\JSP_Project\\JSP_Project\\WebContent\\Uploads";
+			String realPart ="F:\\SHOP\\JSP_Project\\JSP_Project\\WebContent\\Uploads";
 			String image =Path.of(part.getSubmittedFileName()).getFileName().toString();
 			if(!Files.exists(Path.of(realPart))) {
 				Files.createDirectory(Path.of(realPart));

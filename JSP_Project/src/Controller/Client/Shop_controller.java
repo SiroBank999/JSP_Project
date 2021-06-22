@@ -38,7 +38,7 @@ public class Shop_controller extends HttpServlet {
 		ProductModel pro = new ProductModel();
 		List<Product> listproduct  = pro.getProduct();
 		CategoryModel cm = new CategoryModel();
-		List<Category> listcategory = cm.getlistCategory();
+		List<Category> listcategory = cm.getListCategory();
 		BannerModel bm = new BannerModel();
 		List<Banner> listBanner = bm.getBanner();
 		request.setAttribute("banner", listBanner);

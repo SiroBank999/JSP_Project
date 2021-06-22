@@ -7,6 +7,8 @@
 			<div class="card modal-content">
 				<div class="card-body">
 				<h4 class="card-title">Cập nhật sản phẩm</h4>
+				<a href="product_manager" class="float-right btn btn-outline-success">Trở lại</a>
+				<br>
 				<form class="forms-sample" action="product_update" method="post"
 					enctype="multipart/form-data">
 					<div class="form-group">

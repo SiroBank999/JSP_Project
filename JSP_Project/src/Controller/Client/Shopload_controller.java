@@ -37,7 +37,7 @@ public class Shopload_controller extends HttpServlet {
 		ProductModel pro = new ProductModel();
 		List<Product> listproduct  = pro.getProductbyIdcategory(id);
 		CategoryModel cm = new CategoryModel();
-		List<Category> listcategory = cm.getlistCategory();
+		List<Category> listcategory = cm.getListCategory();
 		request.setAttribute("productid", listproduct);
 		request.setAttribute("category", listcategory);
 		request.setAttribute("page", "shop_load");

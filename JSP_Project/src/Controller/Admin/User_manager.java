@@ -9,22 +9,20 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import Model.CategoryModel;
-import Model.ProductModel;
-import Object.Category;
-import Object.Product;
+import Model.UserModel;
+import Object.User;
 
 /**
- * Servlet implementation class ProductManager
+ * Servlet implementation class User_manager
  */
-@WebServlet("/product_manager")
-public class Product_manager extends HttpServlet {
+@WebServlet("/user_manager")
+public class User_manager extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Product_manager() {
+    public User_manager() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -33,29 +31,16 @@ public class Product_manager extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		CategoryModel categoryModel = new CategoryModel();
-		List<Category> listcate = categoryModel.getListCategory();
-		String indexPage = request.getParameter("index");
-		if(indexPage == null) {
-			indexPage = "1";
-		}
-		int index =Integer.parseInt(indexPage);
-		ProductModel pm = new ProductModel();
-		int count  = pm.getTotalProduct();
-		int endPage = count/10;
-		if(endPage % 10 != 0) {
-			endPage++;
-			
-		}
-		List<Product>  list = pm.pagingProduct(index);
-		request.setAttribute("listproduct", list);
-		request.setAttribute("andPag",endPage);
-		request.setAttribute("tag", index);
-		request.setAttribute("listcategory", listcate);
-		request.setAttribute("page", "product");
+		UserModel um = new UserModel();
+		List<User> list =um.getListUser();
+		request.setAttribute("listUser", list);
+		request.setAttribute("page", "user");
 		request.getRequestDispatcher("decorators/admin.jsp").forward(request, response);
 	}
 
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);

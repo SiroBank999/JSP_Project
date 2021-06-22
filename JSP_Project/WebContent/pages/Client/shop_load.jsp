@@ -80,13 +80,13 @@
 					<!-- Price Range Filtering -->
 					<div class="sidebar_section">
 						<div class="sidebar_title">
-							<h5>Filter by Price</h5>
+							<h5>Lọc theo giá</h5>
 						</div>
 						<p>
 							<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
 						</p>
 						<div id="slider-range"></div>
-						<div class="filter_button"><span>filter</span></div>
+						<div class="filter_button"><span>Lọc</span></div>
 					</div>
 
 					<!-- Sizes -->
@@ -143,16 +143,16 @@
 											
 									<ul class="product_sorting">
 										<li>
-											<span class="type_sorting_text">Default Sorting</span>
+											<span class="type_sorting_text">Tất Cả Sản Phẩm</span>
 											<i class="fa fa-angle-down"></i>
 											<ul class="sorting_type">
-												<li class="type_sorting_btn" data-isotope-option='{ "sortBy": "original-order" }'><span>Default Sorting</span></li>
-												<li class="type_sorting_btn" data-isotope-option='{ "sortBy": "price" }'><span>Price</span></li>
-												<li class="type_sorting_btn" data-isotope-option='{ "sortBy": "name" }'><span>Product Name</span></li>
+												<li class="type_sorting_btn" data-isotope-option='{ "sortBy": "original-order" }'><span>Tất Cả Sản Phẩm</span></li>
+												<li class="type_sorting_btn" data-isotope-option='{ "sortBy": "price" }'><span>Theo Giá</span></li>
+												<li class="type_sorting_btn" data-isotope-option='{ "sortBy": "name" }'><span>Theo Tên Sản Phẩm</span></li>
 											</ul>
 										</li>
 										<li>
-											<span>Show</span>
+											<span>Hiển Thị</span>
 											<span class="num_sorting_text">6</span>
 											<i class="fa fa-angle-down"></i>
 											<ul class="sorting_num">

@@ -63,6 +63,18 @@ public class UserModel {
 			// TODO: handle exception
 		}
 	}
+	public void updatePassUser(String pass,int id) {
+		String query ="UPDATE user SET password=? WHERE id =?";
+		try {
+			conn = Database.ketNoi();
+			ps = conn.prepareStatement(query);
+			ps.setString(1, pass);
+			ps.setInt(2, id);
+			ps.executeUpdate();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
 	public void insertAcc(String fullname,String username ,String password,String phone , String email,String status) {
 		String query = "INSERT INTO user(fullname,username,password,phone,email,status) values(?,?,?,?,?,?)";
 		try {
@@ -92,5 +104,6 @@ public class UserModel {
 		m.updateUser_admin("ENABLE", 1);
 
 	}
+	
 	
 }

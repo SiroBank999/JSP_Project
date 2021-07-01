@@ -41,13 +41,13 @@
 				<div class="product_details">
 					<div class="product_details_title">
 						<h2>${detail.productname}</h2>
-						<p>${detail.describe}</p>
+						
 					</div>
 					<div class="free_delivery d-flex flex-row align-items-center justify-content-center">
 						<span class="ti-truck"></span><span>Miễn Phí Giao Hàng</span>
 					</div>
-					<div class="original_price">${detail.price}</div>
-					<div class="product_price">${detail.sale}</div>
+					<div class="product_price">${detail.price} đ</div>
+					<%-- <div class="">${detail.sale} đ</div> --%>
 					<ul class="star_rating">
 						<li><i class="fa fa-star" aria-hidden="true"></i></li>
 						<li><i class="fa fa-star" aria-hidden="true"></i></li>
@@ -63,7 +63,7 @@
 							<span id="quantity_value">1</span>
 							<span class="plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
 						</div>
-						<div class="red_buttonss add_to_cart_buttonss"><a href="#">Thêm vào giỏ hàng</a></div>
+						<div class="btn btn-danger"><a href="cart_add?idP=${detail.id}">Thêm vào giỏ hàng</a></div>
 						<div class="product_favorite d-flex flex-column align-items-center justify-content-center"></div>
 					</div>
 				</div>
@@ -95,34 +95,8 @@
 
 					<div id="tab_1" class="tab_container active">
 						<div class="row">
-							<div class="col-lg-5 desc_col">
-								<div class="tab_title">
-									<h4>Mô Tả</h4>
-								</div>
-								<div class="tab_text_block">
-									<h2>Pocket cotton sweatshirt</h2>
-									<p>Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut...</p>
-								</div>
-								<div class="tab_image">
-									<img src="Templates/Client/images/desc_1.jpg" alt="">
-								</div>
-								<div class="tab_text_block">
-									<h2>Pocket cotton sweatshirt</h2>
-									<p>Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut...</p>
-								</div>
-							</div>
-							<div class="col-lg-5 offset-lg-2 desc_col">
-								<div class="tab_image">
-									<img src="Templates/Client/images/desc_2.jpg" alt="">
-								</div>
-								<div class="tab_text_block">
-									<h2>Pocket cotton sweatshirt</h2>
-									<p>Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut...</p>
-								</div>
-								<div class="tab_image desc_last">
-									<img src="Templates/Client/images/desc_3.jpg" alt="">
-								</div>
-							</div>
+							
+							<p>${detail.describe}</p>
 						</div>
 					</div>
 
@@ -170,7 +144,7 @@
 									<div class="review">
 										<div class="review_date">27 Aug 2016</div>
 										<div class="user_name">Brandon William</div>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										<p>Shop tư vấn nhiệt tình </p>
 									</div>
 								</div>
 

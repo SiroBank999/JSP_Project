@@ -18,7 +18,7 @@ import Object.Admin;
 /**
  * Servlet Filter implementation class Admin
  */
-@WebFilter(filterName = "admin", urlPatterns = { "/admin" })
+@WebFilter(filterName = "admin", urlPatterns = { "/admin","/product_manager","/user_manager","/category_manager"})
 public class Admin_Filter implements Filter {
 
     /**
